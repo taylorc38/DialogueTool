@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>MainForm.ui.qml</file>
+        <file>ChoiceNode.qml</file>
+        <file>Dialogue.qml</file>
+        <file>DialogueTree.qml</file>
+        <file>NPCNode.qml</file>
+        <file>ConditionFunctions.js</file>
+        <file>DialogueNode.qml</file>
+        <file>HttpRequest.qml</file>
+    </qresource>
+</RCC>
