@@ -15,36 +15,6 @@ Window {
 
     }
 
-    DialogueTree {
-        id: tree
-
-        onReady: {
-            var properties = {
-                "nodeId": 1,
-                "previous": 0,
-                "type"  : "choice",
-                "msg" : "Hello World!"
-            }
-            //sample test node
-            createNode(properties)
-
-            var jsonObj = exportTreeToJson()
-            printTree(jsonObj)
-
-            //send in http request
-            var url = baseApiUrl + "exportDialogue"
-            var filename = "SampleConversation1"
-            var prams = "jsonStr=" + JSON.stringify(jsonObj) + "&filename=" + filename
-            httpRequest.post(url, prams,
-                            function (reply) { //success
-                                //do stuff with the reply
-                                console.log(reply.responseText)
-                            },
-                            function (reply){ //fail
-                                console.log("HttpModel :: Failed POST request")
-                            })
-        }
-    }
 
     HttpRequest {
         id: httpRequest
