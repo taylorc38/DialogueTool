@@ -1,0 +1,74 @@
+{
+	"0": {
+        "actor":"Lin",
+		"condition":"",
+		"connections":[1, 2],
+		"msg":"Hello there! How are you?",
+		"nodeId":0,
+		"previous":-1,
+		"type":"npcWChoice"
+	},
+	"1": {
+        "actor":"Jun",
+		"condition":"",
+        "connections":[3],
+		"msg":"Good",
+		"nodeId":1,
+		"previous":0,
+		"type":"choice"
+	},
+	"2": {
+        "actor":"Jun",
+		"condition":"",
+		"connections":[4],
+		"msg":"Bad",
+		"nodeId":2,
+		"previous":0,
+		"type":"choice"
+	},
+	"3": {
+        "actor":"Jun",
+		"condition":"",
+		"connections":[5],
+		"msg":"I'm doing so great!",
+		"nodeId":3,
+		"previous":1,
+		"type":"player"
+	},
+	"4": {
+        "actor":"Jun",
+		"condition":"",
+		"connections":[],
+		"msg":"I've been better...",
+		"nodeId":4,
+		"previous":2,
+		"type":"player"
+	},
+	"5": {
+        "actor":"Lin",
+		"condition":"",
+		"connections":[],
+		"msg":"That's terrific!",
+		"nodeId":5,
+		"previous":3,
+		"type":"npc"
+	},
+	"6": {
+        "actor":"Jun",
+		"condition":"",
+		"connections":[7],
+        "msg":"I have been so much better, Lin. D:",
+		"nodeId":6,
+		"previous":4,
+		"type":"expo"
+	},
+	"7": {
+        "actor":"Lin",
+		"condition":"",
+		"connections":[],
+		"msg":"How sad...",
+		"nodeId":7,
+		"previous":6,
+		"type":"npc"
+	}
+}
