@@ -11,6 +11,7 @@ int main(int argc, char *argv[])
 {
     QGuiApplication app(argc, argv);
     qmlRegisterType<JsonToDialogueTree>("JsonToDialogueTree", 1, 0, "JsonToDialogueTree");
+    qmlRegisterType<JsonIO>("JsonIO", 1,0, "JsonIO");
 
 
     QQmlApplicationEngine engine;

@@ -1,5 +1,6 @@
 import QtQuick 2.4
 import QtQuick.Window 2.2
+import JsonIO 1.0
 
 Window {
     id: root
@@ -41,8 +42,12 @@ Window {
                     visible: true
                 }
             }
-
         ]
+    }
+
+    JsonIO {
+        id: io
+
     }
 
     Item {
